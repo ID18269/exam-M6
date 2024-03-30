@@ -1,0 +1,16 @@
+<!-- poets/templates/poets/poets_list.html -->
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>O'zbek Shoirlari</title>
+</head>
+<body>
+    <h1>O'zbekiston Shoirlari</h1>
+    <ul>
+        {% for poet in poets %}
+            <li><a href="{{ poet.url }}">{{ poet.title }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
